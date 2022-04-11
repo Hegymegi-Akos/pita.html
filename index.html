@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
+
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hegymegi-Kiss Ákos oldala</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+    <style>
+        body {
+            background-color: yellow;
+            font-family: 'The Nautigal', cursive;
+            font-size: 20px;
+        }
+
+
+        .sidebar {
+
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: gray;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .sidebar a.active {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        div.content {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+    </style>
 </head>
-<body>
+
+<body style="background-color:orange;">
+
+    <div class="sidebar">
+
+        <a href="https://hegymegi-akos.github.io/kollazs_jo/" class="active"> HOME</a>
+
+
+        <a href="https://hegymegi-akos.github.io/kollazs_jo/keplink.html">keplink</a>
+
+        <a href="https://hegymegi-akos.github.io/orarend.html/">órarend</a>
+
+        <a href="https://hegymegi-akos.github.io/kollazs_jo/listak.html">Lista</a>
+        <a href="https://hegymegi-akos.github.io/evszakok.html/">Évszakok</a>
+        <a href="https://hegymegi-akos.github.io/ceges.html/">Pizza lap</a>
+         <a href="https://hegymegi-akos.github.io/xd.html/">Számitógépek</a>
+    </div>
     <div class="content">
         <img src="https://tse4.mm.bing.net/th?id=OIP.X21TlEDyT4m89jbNNhI7RgHaEK&pid=Api&P=0&w=279&h=157" alt="Ha">
         <div>
@@ -27,5 +116,9 @@
 
 
     </script>  
+
+    </div>
+
 </body>
+
 </html>
